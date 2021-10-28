@@ -23,35 +23,50 @@
 
 //Задание 2
 
-//const studentsListArr = ['Михаил', 'Николай', 'Олег', 'Пётр'],
-//      student = prompt('Укажите имя студента');
-//let studentsListStr = `${studentsListArr.join(', ')}.`;
+//let studentsListArr = [];
 
-//if (student == null) {
-//	alert(studentsListStr)
-//} else {
-//	alert(student)
-//}
+//while ( true )
+//	{
+//		let student = prompt('Укажите имя студента');
+
+//		if (student !==null) {
+//			studentsListArr.push(student);
+//		} else {
+//			let studentsListStr = `${studentsListArr.join(', ')}.`;
+
+//			if (studentsListArr.length >= 1) {
+//				alert(studentsListStr);
+//			} else {
+//				alert ('Вы не указали ни одного имени студента.');
+//			}
+//			break;
+//		}
+//	}
+
 
 //Задание 3
 
+//const list = [1,2,3,4,5];
+//const blackList = [1,4,5];
+
 //function filter(list, blackList) {
 //	let newList = [];
-	
+
 //	for (let i = 0; i < list.length; i++) {
-//		if (checkElem(list[i], blackList)) {
+//		if (blackList.indexOf(list[i]) === -1) {
 //			newList.push(list[i]);
 //		}
 //	}
-	
+
 //	return newList;
 //}
 
-//function checkElem(elem, array){
-//	return array.indexOf(elem) !== -1;
-//}
+//console.log(filter(list, blackList));
 
-//console.log( filter([1, 2, 3], [2, 3, 4, 5]) );
+//Вполне рабочее решение
+//let newList = list.filter(elem => !blackList.includes(elem));
+//console.log(newList);
+
 
 //Задание 4
 
